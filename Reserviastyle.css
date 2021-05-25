@@ -1,0 +1,552 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+     font-family: 'Raleway', sans-serif;
+     margin: 0;
+     padding: 0;
+}
+
+.wrapper {
+     padding: 0 15px;
+}
+
+h3 {
+     font-size: 17px
+}
+
+h4 {
+     font-size: 15px;
+}
+
+.logo {
+     display: inline-block;
+}
+
+nav.nav-bar {
+     float: right;
+
+}
+
+.nav-bar li {
+     display: inline-block;
+     padding: 25px 15px 0;
+}
+
+.nav-bar ul {
+     margin-top: 0;
+}
+
+.nav-bar a {
+     text-decoration: none;
+     color: #000;
+}
+
+.active {
+     border-top: 1px solid #0065fc;
+     padding-top: 25px
+}
+
+.active a {
+     color: #0065fc;
+}
+
+.nav-bar li:hover a {
+     color: #0065fc;
+}
+
+.nav-bar li:hover,
+.signup:hover {
+     border-top: 1px solid #0065fc;
+}
+
+.signup {
+     float: right;
+     background-color: transparent;
+     border: 0;
+     font-weight: 600;
+     color: blue;
+     padding: 26px
+}
+
+/* Search bar*/
+.searchbar {
+     margin: 20px 0;
+}
+
+.search-icon-bg {
+     background-color: #f2f2f2;
+     padding: 10px;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+     margin: 0;
+
+}
+
+.search-input {
+     padding: 11px 11px 10px;
+     height: 39px;
+     border: 1px solid #f2f2f2;
+     border-left: 0;
+     border-right: 0;
+     margin-left: -4px;
+}
+
+.search-input::placeholder {
+     /* Chrome, Firefox, Opera, Safari 10.1+ */
+     color: black;
+     font-weight: 600;
+     opacity: 1;
+     /* Firefox */
+}
+
+.search-input:-ms-input-placeholder {
+     /* Internet Explorer 10-11 */
+     color: black;
+     font-weight: 600;
+}
+
+.search-input::-ms-input-placeholder {
+     /* Microsoft Edge */
+     color: black;
+     font-weight: 600;
+}
+
+.search-button {
+     background-color: #0065fc;
+     border: 0;
+     padding: 11px 11px 10px;
+     height: 39px;
+     margin: -4px;
+     color: #ffffff;
+     border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+
+/* Filter */
+.filters p,
+.filters ul {
+     display: inline-block;
+     margin: 0;
+     padding: 0;
+}
+
+.filters .nav-items {
+     display: inline-block;
+     border: 2px solid #f2f2f2;
+     border-radius: 25px;
+     padding: 10px 15px 10px 0;
+     margin: 10px;
+     font-weight: 600;
+}
+
+.bubble {
+     background-color: #deebff;
+     padding: 12px;
+     border-radius: 50%;
+     margin-right: 15px
+}
+
+.bubble .fas {
+     color: #0065fc;
+}
+
+.accomodations img {
+     height: 135px;
+     max-height: 350px;
+     width: 100%;
+     object-fit: cover;
+     border-radius: 18px;
+     border-bottom-left-radius: 2px;
+     border-bottom-right-radius: 2px;
+}
+
+.accomodations .fas {
+     color: #0065fc;
+}
+
+.most-popular img {
+     min-height: 141px;
+     height: 141;
+     max-height: 350px;
+     width: 100%;
+     min-width: 141px;
+     object-fit: cover;
+}
+
+
+.most-popular .fas {
+     color: #0065fc;
+}
+
+.activities img {
+     width: 300px;
+     border-radius: 17px;
+}
+
+
+.old-port img {
+     height: 588px;
+}
+
+.fort img {
+     height: 266px;
+     object-fit: cover;
+}
+
+.frioul img {
+     height: 266px;
+     object-fit: fill;
+}
+
+.park img {
+     height: 579px;
+     object-fit: cover;
+}
+
+.notre img {
+     height: 266px;
+     object-fit: cover;
+}
+
+.longchamp img {
+     height: 266px;
+     object-fit: cover;
+}
+
+
+.nav-bar>li {
+     display: inline-block;
+     color: rgb(33, 150, 243)
+}
+
+nav {
+     text-align: right;
+     word-spacing: 6px;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+span {
+     color: black;
+}
+
+
+p {
+     /* line-height: 0em;  */
+     font-size: 13px;
+}
+
+
+
+.filters ul li {
+     display: inline-block;
+     padding: 13px;
+     border-width: thin;
+     border-right: 1px;
+     border-radius: 33px;
+     border-style: inset;
+     color: black;
+     margin: 7px;
+}
+
+#flex-content {
+     display: flex;
+     flex-direction: row;
+     margin-top: 88px;
+}
+
+.accomodations {
+     display: flex;
+     flex-direction: column;
+     grid-gap: 20px;
+     padding: 20px;
+     border-radius: 20px;
+     background-color: lightgray;
+     margin-right: 21px;
+     height: fit-content;
+}
+
+.hotels {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 30px;
+}
+
+.auberge {
+     padding: 5px;
+     border-width: 10px;
+     border-radius: 20px;
+     border-right: 1px;
+     border-color: white;
+     background-color: white;
+
+}
+
+.port {
+     padding: 5px;
+     border-width: 10px;
+     border-radius: 20px;
+     border-right: 1px;
+     border-color: white;
+     background-color: white;
+}
+
+.les {
+     padding: 5px;
+     border-width: 10px;
+     border-radius: 20px;
+     border-right: 1px;
+     border-color: white;
+     background-color: white;
+}
+
+.mer {
+     padding: 5px;
+     border-width: 10px;
+     border-radius: 20px;
+     border-right: 1px;
+     border-color: white;
+     background-color: white;
+}
+
+.panier {
+     padding: 5px;
+     border-width: 10px;
+     border-radius: 20px;
+     border-right: 1px;
+     border-color: white;
+     background-color: white;
+}
+
+.amina {
+     padding: 5px;
+     border-width: 10px;
+     border-radius: 20px;
+     border-right: 1px;
+     border-color: white;
+     background-color: white;
+}
+
+
+.most-popular {
+     display: flex;
+     flex-direction: column;
+     grid-gap: 20px;
+     padding: 10px;
+     border-radius: 10px;
+     border-color: white;
+     background-color: lightgray;
+     /* width: 50%; */
+}
+
+.sun {
+     display: flex;
+     padding: 5px;
+     border-width: 10px;
+     border-radius: 5px;
+     border-right: 1px;
+     border-color: white;
+     background-color: white;
+     width: 300px;
+}
+
+
+.mp-text {
+     text-align: left;
+     flex: 1 1 100%;
+     padding-left: 14px;
+}
+
+
+
+.coeur {
+     display: flex;
+     padding: 5px;
+     border-width: 10px;
+     border-radius: 5px;
+     border-right: 1px;
+     border-color: white;
+     background-color: white;
+}
+
+
+.tout {
+     display: flex;
+     padding: 5px;
+     border-width: 10px;
+     border-radius: 5px;
+     border-right: 1px;
+     border-color: white;
+     background-color: white;
+}
+
+
+.activities {
+     display: flex;
+     flex-direction: row;
+     grid-gap: 51px;
+     padding: 30px;
+     flex-flow: wrap;
+}
+
+.old-port {
+     padding: 5px;
+     border-width: thin;
+     border-radius: 20px;
+     border-right: 1px;
+     background-color: white;
+     border-style: solid;
+     text-align: center;
+}
+
+.fort {
+     padding: 5px;
+     border-width: thin;
+     border-radius: 20px;
+     border-right: 1px;
+     background-color: white;
+     border-style: solid;
+     height: 317px;
+     margin-bottom: 12px;
+}
+
+.frioul {
+     padding: 5px;
+     border-width: thin;
+     border-radius: 20px;
+     border-right: 1px;
+     background-color: white;
+     border-style: solid;
+     height: 317px;
+}
+
+.fort-and-frioul {
+     text-align: center;
+}
+
+.park {
+     padding: 5px;
+     border-width: thin;
+     border-radius: 20px;
+     border-right: 1px;
+     background-color: white;
+     border-style: solid;
+     text-align: center;
+}
+
+.notre {
+     padding: 5px;
+     border-width: thin;
+     border-radius: 20px;
+     border-right: 1px;
+     background-color: white;
+     border-style: solid;
+     height: 317px;
+     text-align: center;
+     margin-bottom: 13px;
+}
+
+.longchamp {
+     padding: 5px;
+     border-width: thin;
+     border-radius: 20px;
+     border-right: 1px;
+     background-color: white;
+     border-style: solid;
+     height: 317px;
+}
+
+.notre-and-longchamp {
+     text-align: center;
+}
+
+
+footer {
+     display: block;
+     background-color: lightgrey;
+     width: 100%;
+     line-height: 32.3px;
+     height: 300px;
+}
+
+.other-options {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+.other-options ul {
+      /* width: 33%;  */
+}
+
+.other-options ul li {
+     display: block;
+}
+
+/*
+ 320 - 480 -786 
+ max start form 0 to 600 
+ */
+@media screen and (max-width: 500px) {
+     .nav-bar ul {
+          padding: 0;
+     }
+
+     nav.nav-bar {
+          display: block;
+          float: none;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          text-align: center;
+     }
+
+     li.active {
+          border-bottom: 1px solid #0065fc;
+          border-top: none;
+          padding-top: 0;
+          padding-bottom: 25px;
+     }
+
+     .activities {
+          flex-direction: column;
+     }
+
+     .hotels {
+
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+     .most-popular img {
+          width: 50%;
+     }
+
+     #flex-content {
+          display: inline-flex;
+          flex-direction: column;
+     }
+
+     .accomodations {
+          order: 2;
+          width: 100%;
+
+     }
+
+     .most-popular {
+          width: 100%;
+          margin-bottom: 25px;
+     }
+
+     .sun {
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 900px) {
+     .hotels {
+          grid-template-columns: repeat(1, 1fr);
+     }
+}
