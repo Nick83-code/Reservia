@@ -540,6 +540,10 @@ footer {
      .sun {
           width: 100%;
      }
+
+     .other-options{
+          flex-direction: column;
+     }
 }
 
 @media screen and (max-width: 900px) {
