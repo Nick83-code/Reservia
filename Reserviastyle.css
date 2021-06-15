@@ -101,13 +101,13 @@ nav.nav-bar {
      /* Firefox */
 }
 
-.search-input:-ms-input-placeholder {
+.search-input {
      /* Internet Explorer 10-11 */
      color: black;
      font-weight: 600;
 }
 
-.search-input::-ms-input-placeholder {
+.search-input {
      /* Microsoft Edge */
      color: black;
      font-weight: 600;
@@ -279,7 +279,6 @@ p {
      border-width: 10px;
      border-radius: 20px;
      border-right: 1px;
-     border-color: white;
      background-color: white;
 
 }
@@ -289,7 +288,6 @@ p {
      border-width: 10px;
      border-radius: 20px;
      border-right: 1px;
-     border-color: white;
      background-color: white;
 }
 
@@ -298,7 +296,7 @@ p {
      border-width: 10px;
      border-radius: 20px;
      border-right: 1px;
-     border-color: white;
+
      background-color: white;
 }
 
@@ -307,7 +305,7 @@ p {
      border-width: 10px;
      border-radius: 20px;
      border-right: 1px;
-     border-color: white;
+
      background-color: white;
 }
 
@@ -316,7 +314,7 @@ p {
      border-width: 10px;
      border-radius: 20px;
      border-right: 1px;
-     border-color: white;
+
      background-color: white;
 }
 
@@ -325,7 +323,7 @@ p {
      border-width: 10px;
      border-radius: 20px;
      border-right: 1px;
-     border-color: white;
+
      background-color: white;
 }
 
@@ -347,7 +345,7 @@ p {
      border-width: 10px;
      border-radius: 5px;
      border-right: 1px;
-     border-color: white;
+
      background-color: white;
      width: 300px;
 }
@@ -367,7 +365,7 @@ p {
      border-width: 10px;
      border-radius: 5px;
      border-right: 1px;
-     border-color: white;
+
      background-color: white;
 }
 
@@ -378,7 +376,7 @@ p {
      border-width: 10px;
      border-radius: 5px;
      border-right: 1px;
-     border-color: white;
+
      background-color: white;
 }
 
@@ -550,4 +548,10 @@ footer {
      .hotels {
           grid-template-columns: repeat(1, 1fr);
      }
+}
+@media screen and (min-width : 1135px) and (max-width : 1499px){
+.activities{
+     padding: 5px;
+     flex-wrap: nowrap;
+}
 }
