@@ -1,0 +1,23 @@
+  // variables 
+$grey-color: #D3D3D3
+@import ('./variables.sass')
+@import ('./mixins.sass')
+@import ('./functions.sass')
+
+@import ('./mixins.sass')
+    header_content_image{
+    }
+        header{
+            &_content{
+                
+                &_image{
+                    background-color: $green_color
+                    }
+                }
+            }
+btn-green{
+    @include btn;
+    width : 200px;
+    background-color: hsl(100, 50, 20)
+    }
+              
