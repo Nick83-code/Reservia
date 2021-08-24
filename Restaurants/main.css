@@ -1,0 +1,62 @@
+body {
+  background: #D3D3D3;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.full-palette img {
+  border-radius: 20px;
+  border-width: thin;
+  height: 135px;
+  max-height: 350px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.enchanted-plate img {
+  border-radius: 20px;
+  border-width: thin;
+  height: 135px;
+  max-height: 350px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.bastille img {
+  border-radius: 20px;
+  border-width: thin;
+  height: 135px;
+  max-height: 350px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.le-gourmand img {
+  border-radius: 20px;
+  border-width: thin;
+  height: 135px;
+  max-height: 350px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+/*# sourceMappingURL=main.css.map */

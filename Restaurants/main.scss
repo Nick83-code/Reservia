@@ -1,0 +1,47 @@
+@import 'variables.sass' ;
+@import 'mixins.sass' ;
+@import 'functions.sass' ;
+
+
+body{
+    background: $grey-color;
+  }
+
+.btn{
+  @include btn;
+}
+
+
+.full-palette {
+  img{
+    @include border;
+    @include image-size;
+   }
+  
+}
+
+
+.enchanted-plate {
+ img{ @include border;
+  @include image-size;
+  }
+ }
+
+
+.bastille {
+ img{ @include border;
+  @include image-size;
+  }
+ }
+
+
+.le-gourmand {
+  img{ @include border;
+  @include image-size;
+  }
+}
+   
+
+    
+
+              
