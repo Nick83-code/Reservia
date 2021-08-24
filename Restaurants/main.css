@@ -13,7 +13,6 @@ body {
   border-width: thin;
   height: 135px;
   max-height: 350px;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 18px;
@@ -26,7 +25,6 @@ body {
   border-width: thin;
   height: 135px;
   max-height: 350px;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 18px;
@@ -34,12 +32,15 @@ body {
   border-bottom-right-radius: 2px;
 }
 
+.enchanted-plate img p {
+  line-height: 4px;
+}
+
 .bastille img {
   border-radius: 20px;
   border-width: thin;
   height: 135px;
   max-height: 350px;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 18px;
@@ -52,7 +53,6 @@ body {
   border-width: thin;
   height: 135px;
   max-height: 350px;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 18px;

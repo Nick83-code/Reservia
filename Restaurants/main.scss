@@ -22,21 +22,27 @@ body{
 
 
 .enchanted-plate {
- img{ @include border;
+ img{ 
+  @include border;
   @include image-size;
+  p{
+    @include text;
+  }
   }
  }
 
 
 .bastille {
- img{ @include border;
+ img{ 
+  @include border;
   @include image-size;
   }
  }
 
 
 .le-gourmand {
-  img{ @include border;
+  img{ 
+  @include border;
   @include image-size;
   }
 }
