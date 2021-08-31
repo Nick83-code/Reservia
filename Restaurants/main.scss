@@ -7,12 +7,15 @@ body{
     background: $grey-color;
   }
 
+.logo img{
+  height: 23px;
+}
+#flex-content-header{
+@include flex-content;
+}
 
 #flex-content{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 12px;
+@include flex-content;
 }
 
 .new-york-restaurants{
@@ -23,6 +26,7 @@ body{
 p{
   line-height: 2px;
 }
+
 
 .heart{
 color: rgb(177, 173, 182);
