@@ -46,6 +46,7 @@ p {
   border-radius: 18px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  width: 200px;
 }
 
 .enchanted-plate {
@@ -64,6 +65,7 @@ p {
   border-radius: 18px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  width: 200px;
 }
 
 .bastille {
@@ -82,6 +84,7 @@ p {
   border-radius: 18px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  width: 200px;
 }
 
 .le-gourmand {
@@ -100,5 +103,6 @@ p {
   border-radius: 18px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  width: 200px;
 }
 /*# sourceMappingURL=main.css.map */
