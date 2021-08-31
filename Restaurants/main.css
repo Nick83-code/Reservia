@@ -27,7 +27,11 @@ p {
 }
 
 .heart {
-  color: blueviolet;
+  color: #b1adb6;
+}
+
+.heart i {
+  float: right;
 }
 
 .full-palette {
