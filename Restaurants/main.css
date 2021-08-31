@@ -2,15 +2,44 @@ body {
   background: #D3D3D3;
 }
 
-.btn {
-  width: 150px;
-  height: 40px;
-  font-size: 14px;
+#flex-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12px;
+}
+
+.new-york-restaurants {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 13px;
+}
+
+p {
+  line-height: 2px;
+}
+
+.heart {
+  color: blueviolet;
+}
+
+.full-palette {
+  padding: 5px;
+  border-width: 10px;
+  border-radius: 20px;
+  border-right: 1px;
+  border-color: white;
+  background-color: white;
 }
 
 .full-palette img {
-  border-radius: 20px;
-  border-width: thin;
   height: 135px;
   max-height: 350px;
   -o-object-fit: cover;
@@ -18,11 +47,18 @@ body {
   border-radius: 18px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+}
+
+.enchanted-plate {
+  padding: 5px;
+  border-width: 10px;
+  border-radius: 20px;
+  border-right: 1px;
+  border-color: white;
+  background-color: white;
 }
 
 .enchanted-plate img {
-  border-radius: 20px;
-  border-width: thin;
   height: 135px;
   max-height: 350px;
   -o-object-fit: cover;
@@ -32,13 +68,16 @@ body {
   border-bottom-right-radius: 2px;
 }
 
-.enchanted-plate img p {
-  line-height: 4px;
+.bastille {
+  padding: 5px;
+  border-width: 10px;
+  border-radius: 20px;
+  border-right: 1px;
+  border-color: white;
+  background-color: white;
 }
 
 .bastille img {
-  border-radius: 20px;
-  border-width: thin;
   height: 135px;
   max-height: 350px;
   -o-object-fit: cover;
@@ -48,9 +87,16 @@ body {
   border-bottom-right-radius: 2px;
 }
 
-.le-gourmand img {
+.le-gourmand {
+  padding: 5px;
+  border-width: 10px;
   border-radius: 20px;
-  border-width: thin;
+  border-right: 1px;
+  border-color: white;
+  background-color: white;
+}
+
+.le-gourmand img {
   height: 135px;
   max-height: 350px;
   -o-object-fit: cover;

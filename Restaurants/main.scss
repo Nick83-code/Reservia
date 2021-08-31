@@ -7,14 +7,30 @@ body{
     background: $grey-color;
   }
 
-.btn{
-  @include btn;
+
+#flex-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 12px;
 }
 
+.new-york-restaurants{
+  display: grid;
+  grid-gap: 13px;
+}
+
+p{
+  line-height: 2px;
+}
+
+.heart{
+color: blueviolet;
+}
 
 .full-palette {
+  @include border;
   img{
-    @include border;
     @include image-size;
    }
   
@@ -22,27 +38,24 @@ body{
 
 
 .enchanted-plate {
- img{ 
   @include border;
+ img{ 
   @include image-size;
-  p{
-    @include text;
-  }
   }
  }
 
 
 .bastille {
- img{ 
   @include border;
+ img{ 
   @include image-size;
   }
  }
 
 
 .le-gourmand {
-  img{ 
   @include border;
+  img{ 
   @include image-size;
   }
 }
