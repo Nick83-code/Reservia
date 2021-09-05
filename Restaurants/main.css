@@ -127,4 +127,22 @@ p {
   border-bottom-right-radius: 2px;
   width: 200px;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12px;
+  background-color: #0e0d0d;
+  width: 50%;
+  line-height: 32.3px;
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
