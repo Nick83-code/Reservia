@@ -3,12 +3,16 @@
 @import 'functions.sass' ;
 
 
-body{
-    background: $grey-color;
-  }
-
 .logo img{
   height: 23px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo-text{
+  font-family: 'Shrikhand', cursive;
 }
 
 #flex-content-header{
@@ -19,6 +23,68 @@ body{
 @include flex-content;
 }
 
+.book-menu{
+  .paris{
+    border-style: none;
+    background-color: rgb(194, 188, 188);
+  }
+@include border;
+@include text;
+background-color: $color-lightgrey;
+display: flex;
+flex-direction: column;
+max-width: 320px;
+justify-content: center;
+align-content: center;
+align-items: center;
+margin: auto;
+.ex-bubble{
+  @include bubble;
+  background-color: rgb(156, 84, 156);
+  color: white;
+}
+ p{
+   line-height: 34px;
+ }
+}
+
+.how-it-works{
+  margin: auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  li{
+    list-style: none;
+    background: $color-lightgrey;
+margin-top: 25px;
+border-radius: 12px;
+width: 320px;
+height: 25px;
+padding: 17px;
+.fas{
+  display: inline-block;
+font-style: normal;
+font-variant: normal;
+text-rendering: auto;
+line-height: 1;
+margin-right: 14px;
+}
+    .number{
+      width: 10px;
+      height: 19px;
+      background-color: $color-primary;
+      border-radius: 25%;
+      float: left;
+      color: white;
+      font-weight: bold;
+      padding: 1%;
+    }
+  }
+    .bubble{
+      @include bubble;
+    }
+}
 
 .new-york-restaurants{
   display: grid;
@@ -30,11 +96,17 @@ p{
 }
 
 
+
 .heart{
 color: rgb(177, 173, 182);
 i{
   float: right;
 }
+}
+
+.new-york-restaurants{
+@include border;
+background-color: $color-lightgrey;
 }
 
 .full-palette {
@@ -70,11 +142,22 @@ i{
 }
    
 footer {
-  @include flex-content;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: rgb(65, 60, 60);
-  width: 50%;
-  line-height: 32.3px;
+  width: 20%;
   color:white;
+  li{
+    list-style: none;
+    margin-top:10px;
+    i{
+      float: left;
+      margin-right: 10px;
+    }
+  }
 }
 
     
