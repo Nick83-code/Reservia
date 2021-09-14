@@ -1,0 +1,60 @@
+@import 'variables.sass';
+@import 'mixins.sass';
+@import 'functions.sass';
+
+.logo img{
+    height: 13px;
+  }
+
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .logo-text{
+    font-family: 'Shrikhand', cursive;
+  }
+
+  img{
+      @include image-size;
+  }
+
+  #flex-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-menu{
+    font-family: 'Shrikhand', cursive;
+    i{
+      float: right;
+    }
+  }
+
+  .food{
+      background-color: $color-lightgrey;
+      li{
+     list-style: none;
+     line-height: 8px;
+  }
+  }
+
+  
+
+  footer {
+    margin: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(65, 60, 60);
+    width: 20%;
+    color:white;
+    li{
+      list-style: none;
+      margin-top:10px;
+      i{
+        float: left;
+        margin-right: 10px;
+      }
+    }
+  }
