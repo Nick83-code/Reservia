@@ -24,6 +24,10 @@ body {
   margin-top: 12px;
 }
 
+#flex-content-header .logo {
+  padding: auto;
+}
+
 #flex-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,9 +43,11 @@ body {
 }
 
 .book-menu {
-  padding: 5px;
   border-width: 10px;
   border-right: 1px;
+  border-radius: 18px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   background-color: white;
   text-align: center;
   background-color: #f3f3f3;
@@ -69,16 +75,42 @@ body {
   background-color: #c2bcbc;
 }
 
-.book-menu .ex-bubble {
-  padding: 12px;
-  border-radius: 50%;
-  margin-right: 15px;
-  background-color: #9c549c;
+.book-menu button {
+  background-color: rgba(190, 61, 190, 0.685);
   color: white;
+  border-radius: 30px;
+  padding: 20px;
 }
 
 .book-menu p {
   line-height: 34px;
+}
+
+.btn-grad {
+  background-image: -webkit-gradient(linear, left top, right top, from(#DA22FF), color-stop(51%, #9733EE), to(#DA22FF));
+  background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+}
+
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .how-it-works {
@@ -120,17 +152,22 @@ body {
   width: 10px;
   height: 19px;
   background-color: #9356DC;
-  border-radius: 25%;
+  border-radius: 50%;
   float: left;
   color: white;
   font-weight: bold;
-  padding: 1%;
+  padding: 5px;
+  margin-left: -31px;
 }
 
 .how-it-works .bubble {
   padding: 12px;
   border-radius: 50%;
   margin-right: 15px;
+}
+
+.how-it-works li:hover {
+  background-color: #e4d5f6;
 }
 
 .new-york-restaurants {
@@ -143,26 +180,72 @@ p {
   line-height: 2px;
 }
 
+.full-palette .new {
+  background-color: #99E2D0;
+  padding: 10px;
+  width: 50px;
+  position: absolute;
+  right: 71px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.divHearts:hover .heart i {
+  display: block;
+}
+
+.divHearts:hover .heart-inactive i {
+  display: none;
+}
+
 .heart {
   color: #b1adb6;
 }
 
 .heart i {
   float: right;
+  display: none;
+}
+
+.heart i:hover {
+  color: #8e4eda;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  display: block;
+}
+
+.heart-inactive {
+  color: grey;
+}
+
+.heart-inactive:hover {
+  display: none;
+  color: red;
+}
+
+.heart-inactive i {
+  float: right;
 }
 
 .new-york-restaurants {
-  padding: 5px;
   border-width: 10px;
   border-right: 1px;
+  border-radius: 18px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   background-color: white;
   background-color: #f3f3f3;
+  padding: 42px;
 }
 
 .full-palette {
-  padding: 5px;
   border-width: 10px;
   border-right: 1px;
+  border-radius: 18px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   background-color: white;
 }
 
@@ -174,13 +257,15 @@ p {
   border-radius: 18px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  width: 200px;
+  width: 100%;
 }
 
 .enchanted-plate {
-  padding: 5px;
   border-width: 10px;
   border-right: 1px;
+  border-radius: 18px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   background-color: white;
 }
 
@@ -192,13 +277,15 @@ p {
   border-radius: 18px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  width: 200px;
+  width: 100%;
 }
 
 .bastille {
-  padding: 5px;
   border-width: 10px;
   border-right: 1px;
+  border-radius: 18px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   background-color: white;
 }
 
@@ -210,13 +297,15 @@ p {
   border-radius: 18px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  width: 200px;
+  width: 100%;
 }
 
 .le-gourmand {
-  padding: 5px;
   border-width: 10px;
   border-right: 1px;
+  border-radius: 18px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   background-color: white;
 }
 
@@ -228,7 +317,7 @@ p {
   border-radius: 18px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-  width: 200px;
+  width: 100%;
 }
 
 footer {
@@ -258,5 +347,299 @@ footer li {
 footer li i {
   float: left;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 478px) {
+  footer {
+    width: 100%;
+  }
+  .new-york-restaurants {
+    width: 16%;
+  }
+  .how-it-works {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .how-it-works {
+    width: 100%;
+  }
+  .how-it-works li {
+    width: 100%;
+  }
+  .new-york-restaurants {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+.logo img {
+  height: 20px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo-text {
+  font-family: 'Shrikhand', cursive;
+}
+
+header > .logo {
+  display: inline;
+  padding-left: 40%;
+}
+
+.main-menu {
+  font-family: 'Shrikhand', cursive;
+  padding: 18px;
+  width: 80%;
+}
+
+.main-menu p {
+  width: 80%;
+  display: inline-block;
+}
+
+.main-menu i {
+  float: right;
+  margin-top: 20px;
+}
+
+.far {
+  float: right;
+}
+
+header {
+  margin: auto;
+}
+
+.food {
+  width: 30%;
+  margin: auto;
+  width: 30%;
+  margin: auto;
+}
+
+.food img {
+  height: 135px;
+  max-height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 100%;
+  width: 100%;
+  height: 235px;
+}
+
+.food li {
+  list-style: none;
+  line-height: 16px;
+  margin: 15px;
+}
+
+#flex-content {
+  margin: auto;
+}
+
+.content-wrapper {
+  background-color: #f3f3f3;
+  position: relative;
+  margin-top: -100px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #eee;
+  z-index: 2;
+}
+
+.content-wrapper .bubble {
+  padding: 12px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0px;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-wrapper .bubble:hover .transition {
+  display: block;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.content-wrapper .title {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content-wrapper .rectangle {
+  width: auto;
+  background-color: #99E2D0;
+  height: 7px;
+  margin-right: 430px;
+}
+
+.content-wrapper .price {
+  width: 5%;
+}
+
+.content-wrapper .price b {
+  float: right;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.content-wrapper .transition {
+  width: 20%;
+  background-color: #99E2D0;
+  display: none;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.content-wrapper .transition i {
+  margin: auto;
+  padding: 20px 29px;
+  font-size: 25px;
+  color: white;
+}
+
+.content-wrapper .transition i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.btn-grad {
+  background-image: -webkit-gradient(linear, left top, right top, from(#DA22FF), color-stop(51%, #9733EE), to(#DA22FF));
+  background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+}
+
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  margin-left: 149px;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #413c3c;
+  width: 30%;
+  color: white;
+  margin-top: -7px;
+}
+
+footer li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+footer li i {
+  float: left;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 478px) {
+  header {
+    width: 100%;
+    margin: 0px;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .food {
+    width: 100%;
+    margin: 0px;
+  }
+  footer {
+    width: 100%;
+    margin: 0px;
+  }
+  .btn-grad {
+    margin: auto;
+  }
+  .content-wrapper .rectangle {
+    margin-right: 97%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

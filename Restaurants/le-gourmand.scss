@@ -3,9 +3,9 @@
 @import 'functions.sass';
 
 .logo img{
-  height: 20px;
-  width: 40%;
- }
+    height: 20px;
+    width: 40%;
+  }
 
   body{
     font-family: 'Roboto', sans-serif;
@@ -21,12 +21,10 @@ padding-left: 111px;
   }
 
 
-
   .main-menu{
     font-family: 'Shrikhand', cursive;
     padding: 18px;
     width: 80%;
-    
     p{
       width: 80%;
       display: inline-block;
@@ -46,12 +44,15 @@ header{
   width : 30%
 }
 
+
   .food{
-    img{
-      @include image-size;
-      width: 100%;
-      height: 235px;
-  }
+    width: 30%;
+    margin: auto;
+      img{
+        @include image-size;
+        width: 100%;
+        height: 235px;
+      }
       width: 30%;
       margin: auto;
       li{
@@ -76,10 +77,10 @@ z-index: 2;
     @include bubble;
     background-color: white;
     border-radius: 5px;
-    padding: 0px;
-    display: flex;
+    padding: 17px;
     animation-name: slide;
-animation-duration: 1s;
+    animation-duration: 1s;
+    display: flex;
     &:hover{
       .transition{
         display: block;
@@ -89,15 +90,19 @@ animation-name: slide;
 animation-duration: 1s;
       }
   }
-  .title{
-    width: 70%
   }
+
+  .title{
+    width: 70%;
+  }
+
   .price{
     width: 10%;
     b{
-      float:right;
+      float: right;
     }
   }
+
   .transition{
     width :20%;
     background-color: $color-tertiary;
@@ -116,17 +121,19 @@ transition: 3s;
       }
     }
   }
-}
 
-
-@keyframes slide {
-  0% {
-      transform: translate(100%,0);
+  .price{
+    float: right;
   }
 
-  100% {
-      transform: translate(0,0);
-  }
+  @keyframes slide {
+    0% {
+        transform: translate(100%,0);
+    }
+
+    100% {
+        transform: translate(0,0);
+    }
 }
 
 .btn-grad {background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)}
@@ -175,23 +182,24 @@ transition: 3s;
     footer {
       width: 100%;
     }
-    header{
-      width: 100%
-    }
-  }
-
-  @media screen and (max-width:1000px) {
-    .food{
-      width:100%;
-      margin: 0px;
+      header{
+        width: 100%
+      }
     }
 
-    footer{
-      width:100%;
-      margin: 0px;
-    }
+    @media screen and (max-width:1000px) {
+      .food{
+        width:100%;
+        margin: 0px;
+      }
 
-    .btn-grad{
-      margin: auto;
-    }
+      footer{
+        width:100%;
+        margin: 0px;
+      }
+
+      .btn-grad{
+        margin: auto;
+      }
+      
     }

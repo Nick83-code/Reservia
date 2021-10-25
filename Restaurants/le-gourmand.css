@@ -44,6 +44,8 @@ header {
 .food {
   width: 30%;
   margin: auto;
+  width: 30%;
+  margin: auto;
 }
 
 .food img {
@@ -84,14 +86,14 @@ header {
   margin-right: 15px;
   background-color: white;
   border-radius: 5px;
-  padding: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 17px;
   -webkit-animation-name: slide;
           animation-name: slide;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .bubble:hover .transition {
@@ -106,19 +108,19 @@ header {
           animation-duration: 1s;
 }
 
-.bubble .title {
+.title {
   width: 70%;
 }
 
-.bubble .price {
+.price {
   width: 10%;
 }
 
-.bubble .price b {
+.price b {
   float: right;
 }
 
-.bubble .transition {
+.transition {
   width: 20%;
   background-color: #99E2D0;
   display: none;
@@ -128,20 +130,24 @@ header {
   transition: 1s;
 }
 
-.bubble .transition i {
+.transition i {
   margin: auto;
   padding: 20px 29px;
   font-size: 25px;
   color: white;
 }
 
-.bubble .transition i:hover {
+.transition i:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition-duration: 3s;
           transition-duration: 3s;
   -webkit-transition: 3s;
   transition: 3s;
+}
+
+.price {
+  float: right;
 }
 
 @-webkit-keyframes slide {
@@ -246,4 +252,4 @@ footer li i {
     margin: auto;
   }
 }
-/*# sourceMappingURL=b-menu.css.map */
+/*# sourceMappingURL=le-gourmand.css.map */

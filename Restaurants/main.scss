@@ -3,6 +3,8 @@
 @import 'functions.sass' ;
 
 
+
+
 .logo img{
   height: 23px;
 }
@@ -17,10 +19,14 @@ body{
 
 #flex-content-header{
 @include flex-content;
+.logo{
+  padding: auto;
+}
 }
 
 #flex-content{
 @include flex-content;
+
 }
 
 .book-menu{
@@ -38,15 +44,36 @@ justify-content: center;
 align-content: center;
 align-items: center;
 margin: auto;
-.ex-bubble{
-  @include bubble;
-  background-color: rgb(156, 84, 156);
+button{
+  background-color: rgba(190, 61, 190, 0.685);
   color: white;
+  border-radius: 30px;
+padding: 20px;
 }
  p{
    line-height: 34px;
  }
 }
+
+.btn-grad {background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
 
 .how-it-works{
   margin: auto;
@@ -74,16 +101,21 @@ margin-right: 14px;
       width: 10px;
       height: 19px;
       background-color: $color-primary;
-      border-radius: 25%;
+      border-radius: 50%;
       float: left;
       color: white;
       font-weight: bold;
-      padding: 1%;
+      padding: 5px;
+      margin-left: -31px;
     }
   }
     .bubble{
       @include bubble;
     }
+}
+
+.how-it-works li:hover{
+background-color: lighten($color-primary, 30%);
 }
 
 .new-york-restaurants{
@@ -94,19 +126,65 @@ margin-right: 14px;
 p{
   line-height: 2px;
 }
+.full-palette{
+.new{
+  background-color: $color-tertiary;
+  padding: 10px;
+  width: 50px;
+  position: absolute;
+  right: 71px;
 
-
-
+  margin-top: 10px;
+  color: white;
+font-weight: bolder;
+text-align: center;
+}
+}
+.divHearts{
+  &:hover{
+    .heart {
+      i {
+        display: block;
+      }
+    }
+    .heart-inactive{
+      
+        i{
+          display: none;
+        }
+      }
+    
+  }
+}
 .heart{
 color: rgb(177, 173, 182);
 i{
   float: right;
+  display: none;
+  &:hover{
+    color: darken( $color-primary, $amount: 2);
+    transition: 250ms ease-in-out;
+    display:block;
+  }
 }
+}
+
+.heart-inactive{
+  color: grey;    
+  &:hover{
+      display: none;
+      color:red
+    }
+  i{
+    float: right;
+
+  }
 }
 
 .new-york-restaurants{
 @include border;
 background-color: $color-lightgrey;
+padding: 42px;
 }
 
 .full-palette {
@@ -160,6 +238,35 @@ footer {
   }
 }
 
-    
+@media screen and (max-width: 478px) {
+  footer {
+    width: 100%;
+  }
+  .new-york-restaurants{
+    width: 16%;
+  }
+  .how-it-works{
+    width: 100%;
+  }
+}
 
-              
+@media screen and (max-width: 1000px){
+  .how-it-works{
+    width: 100%;
+    li{
+      width: 100%;
+      }
+    }
+    
+  .new-york-restaurants{
+    width: 100%;
+  }
+
+  footer{
+    width:100%;
+    margin: 0px;
+  }
+}
+  @import './ep-menu.scss'   
+  
+  

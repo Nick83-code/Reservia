@@ -6,7 +6,8 @@
     <meta name="description" content="Project 3 menu">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href=b-menu.css>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,43 +19,133 @@
 
 <body>
     <header>
-        <div id="flex-content-header">
-            <i class="fas fa-arrow-left"></i> <div class="logo"><img src="/images/logo/ohmyfood.png" alt="ohmyfood logo"></div>
-        </div>
+   <a href="index.html"><i class="fas fa-arrow-left"></i></a> <div class="logo"><img src="/images/logo/ohmyfood.png" alt="ohmyfood logo"></div>
     </header>
     <div class="food">
         <div id="flex-content">
-    <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"  alt="bastille" title="bastille">
-     
-        <div class="main-menu"><p>Bastille</p></div> <i class="far fa-heart"></i>
+         <img src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"  alt="bastille" title="bastille"> 
+         </div>
+     <div class="content-wrapper">
+        <div class="main-menu"><p>Bastille</p><i class="far fa-heart"></i>
+        </div> 
         <p>Entrees</p>
+        <div class="rectangle"></div>
         <ul>
-            <li><span class="bubble"><b>Citrus Squid Carpaccio</b>
-            <p>with orange zest</p></span></li>
-            <li><span class="bubble"><b>Grandmother's Vegatable Soup</b>
-            <p>Carrots, parsnips, Jerusalem artichokes</p></span></li>
-            <li><span class="bubble"><b>Onion Soup</b>
-            <p>Revisited</p></span></li>
+            <li class="bubble">
+                <div class="title"><b>Citrus Squid Carpaccio</b>
+            <p>with orange zest</p>
+            </div>
+
+            <div class="price">
+                <b>25<i class="fas fa-euro-sign"></i></b>
+            </div>
+
+            <div class="transition">
+                <i class="fas fa-check-circle"></i>
+            </div>
+
+        </li>
+            <li class="bubble">
+                <div class="title"><b>Grandmother's Vegatable Soup</b>
+            <p>Carrots, parsnips, Jerusalem artichokes</p>
+        </div>
+        <div class="price"><b>35<i class="fas fa-euro-sign"></i></b>
+        </div>
+
+        <div class="transition">
+            <i class="fas fa-check-circle"></i>
+        </div>
+    </li>
+            <li class="bubble">
+                <div class="title">
+                    <b>Onion Soup</b>
+                <p>Revisited</p>
+        </div>
+        
+        <div class="price"><b>20<i class="fas fa-euro-sign"></i></b>
+        </div>
+
+        <div class="transition">
+            <i class="fas fa-check-circle"></i>
+        </div>
+    
+    </li>
         </ul>
         <p>Main Dish</p>
+        <div class="rectangle"></div>
         <ul>
-            <li><span class="bubble"><b>Scallops</b>
-            <p>with mashed parsnip</span></p></li>
-            <li><span class="bubble"><b>Marget de Canard</b>
-            <p>with mashed potatoes</span></p></li>
-            <li><span class="bubble"><b>Game Hen</b>
-            <p>with vegatable gnocchis</span></p></li>
+            <li class="bubble">
+                <div class="title">
+                    <b>Scallops</b>
+            <p>with mashed parsnip</p>
+        </div>
+
+        <div class="price"><b>40<i class="fas fa-euro-sign"></i></b>
+         </div>    
+            
+         <div class="transition">
+                <i class="fas fa-check-circle"></i>
+            </div>
+    </li>
+            <li class="bubble">
+                <div class="title">
+                <b>Marget de Canard</b>
+            <p>with mashed potatoes</p>
+        </div>
+        <div class="price"><b>35<i class="fas fa-euro-sign"></i></b>
+        </div>
+        <div class="transition">
+            <i class="fas fa-check-circle"></i>
+        </div>
+    </li>
+            <li class="bubble">
+                <div class="title"><b>Game Hen</b>
+            <p>with vegatable gnocchis</p></div>
+            <div class="price"><b>44<i class="fas fa-euro-sign"></i></b>
+            </div>
+            <div class="transition">
+                <i class="fas fa-check-circle"></i>
+            </div>
+        
+        </li>
         </ul>
         <p>Desserts</p>
+        <div class="rectangle"></div>
         <ul>
-            <li><span class="bubble"><b>Floral Ice Cream</b>
-            <p>with hazelnut butter</p></span></li>
-            <li><span class="bubble"><b>Chocolate Lava Cake</b>
-            <p>Revisited</p></span></li>
-            <li><span class="bubble"><b>Napoleon</b>
-            <p>with bluberries and marzipan</p></span></li>
+            <li class="bubble">
+                <div class="title"><b>Floral Ice Cream</b>
+            <p>with hazelnut butter</p>
+        </div>
+        <div class="price">
+            <b>18<i class="fas fa-euro-sign"></i></b>
+        </div>
+
+            <div class="transition">
+                <i class="fas fa-check-circle"></i>
+            </div>
+        </li>
+            <li class="bubble">
+                <div class="title"><b>Chocolate Lava Cake</b>
+            <p>Revisited</p>
+            </div>
+        <div class="price"><b>22<i class="fas fa-euro-sign"></i></b>
+        </div>
+            <div class="transition">
+                <i class="fas fa-check-circle"></i>
+            </div>
+        </li>
+            <li class="bubble">
+                <div class="title"><b>Napoleon</b>
+            <p>with bluberries and marzipan</p>
+        </div>
+        <div class="price"><b>23<i class="fas fa-euro-sign"></i></b></div>
+        <div class="transition">
+            <i class="fas fa-check-circle"></i>
+        </div>
+    </li>
         </ul>
-        <p>Order</p>
+        <button class="btn-grad">Order</button> 
+    </div>
     </div>
     </div>
         <footer>
