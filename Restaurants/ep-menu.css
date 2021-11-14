@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
 }
 
 .logo-text {
@@ -29,6 +30,7 @@ header > .logo {
 .main-menu i {
   float: right;
   margin-top: 20px;
+  margin-right: -5%;
 }
 
 .far {
@@ -63,6 +65,7 @@ header {
   list-style: none;
   line-height: 16px;
   margin: 15px;
+  font-weight: lighter;
 }
 
 #flex-content {
@@ -72,7 +75,7 @@ header {
 .content-wrapper {
   background-color: #f3f3f3;
   position: relative;
-  margin-top: -100px;
+  margin-top: -18px;
   border-radius: 30px 30px 0px 0px;
   background-color: #eee;
   z-index: 2;
@@ -84,11 +87,12 @@ header {
   margin-right: 15px;
   background-color: white;
   border-radius: 5px;
-  padding: 0px;
+  padding: 6px;
   -webkit-animation-name: slide;
           animation-name: slide;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  margin-left: -29px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +121,7 @@ header {
   width: auto;
   background-color: #99E2D0;
   height: 7px;
-  margin-right: 430px;
+  margin-right: 407px;
 }
 
 .content-wrapper .price {
@@ -129,6 +133,7 @@ header {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-top: 32px;
 }
 
 .content-wrapper .transition {
@@ -241,6 +246,9 @@ footer li i {
   header {
     width: 100%;
     margin: 0px;
+  }
+  .content-wrapper .rectangle {
+    margin-right: 407px;
   }
   footer {
     width: 100%;
