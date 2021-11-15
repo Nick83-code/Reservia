@@ -13,6 +13,8 @@
   
   .logo-text{
     font-family: 'Shrikhand', cursive;
+    margin-left: 34px;
+margin-bottom: 26px;
   }
 header{
 >.logo{
@@ -178,7 +180,7 @@ transition: 3s;
     margin: auto;
     display: flex;
     align-content: center;
-    align-items: center;
+    align-items: baseline;
     flex-direction: column;
     background-color: rgb(65, 60, 60);
     width: 30%;
