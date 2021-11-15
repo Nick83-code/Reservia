@@ -8,6 +8,8 @@ body {
 
 .logo-text {
   font-family: 'Shrikhand', cursive;
+  margin-left: 34px;
+  margin-bottom: 26px;
 }
 
 h2 {
@@ -414,6 +416,8 @@ body {
 
 .logo-text {
   font-family: 'Shrikhand', cursive;
+  margin-left: 34px;
+  margin-bottom: 26px;
 }
 
 header > .logo {
