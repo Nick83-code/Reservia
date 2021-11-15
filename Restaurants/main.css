@@ -8,8 +8,6 @@ body {
 
 .logo-text {
   font-family: 'Shrikhand', cursive;
-  margin-left: 34px;
-  margin-bottom: 26px;
 }
 
 h2 {
@@ -646,7 +644,8 @@ footer li {
   margin-top: 10px;
 }
 
-footer li i {
+footer li text
+i {
   float: left;
   margin-right: 10px;
 }
