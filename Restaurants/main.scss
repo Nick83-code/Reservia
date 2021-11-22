@@ -152,7 +152,8 @@ text-align: center;
   display: flex;
 }
 .card-title{
-  width: 80%
+  width: 80%;
+  padding: 10px;
 }
 }
 .divHearts{
@@ -201,7 +202,7 @@ i{
 .new-york-restaurants{
 @include border;
 background-color: $color-lightgrey;
-padding: 9px;
+padding: 22px;
 }
 
 .full-palette {

@@ -209,6 +209,7 @@ p {
 
 .full-palette .card-title {
   width: 80%;
+  padding: 10px;
 }
 
 .divHearts {
@@ -263,7 +264,7 @@ p {
   border-bottom-right-radius: 2px;
   background-color: white;
   background-color: #f3f3f3;
-  padding: 9px;
+  padding: 22px;
 }
 
 .full-palette {
@@ -644,8 +645,7 @@ footer li {
   margin-top: 10px;
 }
 
-footer li text
-i {
+footer li i {
   float: left;
   margin-right: 10px;
 }
